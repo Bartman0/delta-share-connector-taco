@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Delta Share Connector</title>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <link rel="icon" href="data:,">
+  <link href="index.css" rel="stylesheet" />
+  <script src="index.ts" type="module" defer></script>
+</head>
+
+<body>
+  <p id="error" style="display: block; margin-top: 2em; height: 5px; text-align: center; color: red;"></p>
+
+  <div class="box m-auto ">
+    <div class="card">
+      <div class="card-header">
+        Delta Share Connector
+      </div>
+
+      <div class="card-body">
+        <label for="connection_profile" class="form-label">Choose delta-sharing connection profile to use: </label>
+        <input type="file" id="connection_profile" name="connection_profile"/>
+        <div class=" text-center">
+          <button type="button" class="btn btn-success" id="submitButton" disabled>
+            Please wait while settings load...
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

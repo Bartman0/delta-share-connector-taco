@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<connector-plugin class='delta_share_connector' superclass='eps' plugin-version='0.1.0' name='Delta Share connector'
+                  version='18.1' min-version-tableau='2024.1'>
+    <vendor-information>
+        <company name='Simpsons'/>
+        <support-link url='https://github.com/Bartman0/delta-share-connector/issues'/>
+    </vendor-information>
+    <connection-customization class="delta_share_connector" enabled="true" version="10.0">
+        <vendor name="salesforce"/>
+        <driver name="salesforce"/>
+        <customizations>
+        </customizations>
+    </connection-customization>
+    <connection-fields file='connection-fields.xml'/>
+    <connection-metadata file='connection-metadata.xml'/>
+</connector-plugin>

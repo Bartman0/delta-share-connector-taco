@@ -1,0 +1,30 @@
+{
+  "name": "Delta Share connector",
+  "version": "0.1.0",
+  "tableau-version": {
+    "min": "2024.1"
+  },
+  "vendor": {
+    "name": "Simpsons",
+    "support-link": "https://github.com/Bartman0/delta-share-connector/issues",
+    "email": "kooijman.richard@gmail.com"
+  },
+  "permission": {
+    "api": {
+      "https://*.dfs.core.windows.net/": [
+        "GET"
+      ],
+      "https://*.databricks.net/": [
+        "GET",
+        "POST"
+      ]
+    }
+  },
+  "auth": {
+    "type": "none"
+  },
+  "window": {
+    "height": 600,
+    "width": 800
+  }
+}

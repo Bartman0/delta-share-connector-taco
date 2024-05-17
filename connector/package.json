@@ -1,0 +1,46 @@
+{
+  "name": "delta-share-connector",
+  "displayName": "Delta Share Connector",
+  "description": "Connector that ingests data from a Delta Share into Tableau",
+  "author": "",
+  "devDependencies": {
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@tableau/taco-toolkit": "2.1.0",
+    "bootstrap": "^5.1.3",
+    "delta-sharing": "^0.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "scripts": {
+    "build": "taco-scripts build",
+    "clean": "taco-scripts clean",
+    "start": "taco-scripts start"
+  },
+  "targets": {
+    "handlers": {
+      "includeNodeModules": true,
+      "sourceMap": false,
+      "context": "web-worker",
+      "distDir": "../dist/handlers",
+      "outputFormat": "commonjs",
+      "isLibrary": false,
+      "optimize": false
+    },
+    "app": {
+      "publicUrl": "./",
+      "distDir": "../dist/app",
+      "engines": {
+        "browsers": "Chrome 70"
+      }
+    }
+  },
+  "alias": {
+    "process": false,
+    "path": false,
+    "util": false
+  }
+}
